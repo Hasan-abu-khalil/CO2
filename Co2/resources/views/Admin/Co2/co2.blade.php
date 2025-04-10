@@ -30,7 +30,7 @@
                                 <th>Product Name</th>
                                 <th>Unit</th>
                                 <th>Percentage Amount</th>
-                                <th>Amount</th>
+                                <th>Amount %</th>
                             </tr>
                         </thead>
                         <tbody>

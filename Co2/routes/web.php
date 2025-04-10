@@ -21,7 +21,7 @@ use SebastianBergmann\CodeCoverage\Util\Percentage;
 
 
 //Sources routes
-Route::get('/Sources', [SourcesController::class, 'index'])->name('source.index');
+Route::get('/', [SourcesController::class, 'index'])->name('source.index');
 Route::post('/Sources', [SourcesController::class, 'store'])->name('source.store');
 Route::get('/Sources/{id}/edit', [SourcesController::class, 'edit'])->name('source.edit');
 Route::post('/Sources/{id}', [SourcesController::class, 'update'])->name('source.update');

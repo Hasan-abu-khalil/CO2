@@ -31,7 +31,7 @@
                                 <th>#</th>
                                 <th>Source Name</th>
                                 <th>product Name</th>
-                                <th>Amount</th>
+                                <th>Amount %</th>
                             </tr>
                         </thead>
                         <tbody>

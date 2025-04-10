@@ -9,7 +9,7 @@ $(document).ready(function () {
     var SourcesTable = $("#SourcesTable").DataTable({
         processing: true,
         serverSide: true,
-        ajax: "/Sources",
+        ajax: "/",
         columns: [
             { data: "id", name: "id" },
             { data: "name", name: "name" },
@@ -49,14 +49,14 @@ $(document).ready(function () {
                     );
                 }
             },
-        });     
+        });
     });
 
     $(document).on("click", ".edit", function () {
-        var id = $(this).data("id"); 
+        var id = $(this).data("id");
         $.get("/Sources/" + id + "/edit", function (data) {
             $("#updateSourceForm #up_name").val(data.name);
-            $("#updateSourceForm").data("id", data.id); 
+            $("#updateSourceForm").data("id", data.id);
             $("#updateSourceModal").modal("show");
         });
     });
